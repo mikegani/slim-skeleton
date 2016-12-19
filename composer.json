@@ -1,0 +1,53 @@
+{
+    "name": "ArsiPHP",
+    "description": "Code Skeleton using Slim PHP framework",
+    "keywords": ["php", "slim"],
+    "homepage": "https://www.arsitag.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Gani",
+            "email": "michgani@gmail.com",
+            "homepage": "https://www.arsitag.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "controller/",
+            "Model\\": "model/",
+            "Core\\": "core/",
+            "Service\\": "service/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer dumpautoload -o"
+        ],
+        "post-update-cmd": [
+            "composer dumpautoload -o"
+        ]   
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "slim/twig-view": "^2.0",
+        "cartalyst/sentinel": "^2.0",
+        "illuminate/database": "^5.2",
+        "illuminate/events": "^5.2",
+        "slim/csrf": "^0.6.0",
+        "slim/http-cache": "^0.3.0",
+        "tuupola/slim-jwt-auth": "^2.0",
+        "vlucas/phpdotenv": "^2.2",
+        "slim/flash": "dev-master",
+        "phpmailer/phpmailer": "^5.2",
+        "firebase/php-jwt": "^3.0",
+        "dopesong/slim-whoops": "^1.0",
+        "guzzlehttp/guzzle": "~6.2",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "samdark/sitemap": "^2.0",
+        "league/oauth2-google": "^1.0",
+        "illuminate/contracts": "^5.3"
+    }
+}

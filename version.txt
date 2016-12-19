@@ -1,0 +1,18 @@
+14 Dec 2016: Michael Gani 
+1) add more depth to constant
+  - path = definition for file path reference
+  - definition = definition for enums and other constant variables
+  - database = definition for database related
+2) add support multiple MySQL database connection 
+  - Add DB credentials and connection info on .env
+  - Add the new db connection on config/database.php
+3) Service\BaseService is a static function
+  - Raw SQL execution via Capsule Manager are executed on this class
+  - First, select which database to run (based on config/database.php)
+  - Second, run the corresponding sql command (select, update, delete)
+4) Add composer require illuminate events and illuminate contracts
+
+13 Dec 2016: Michael Gani 
+1) First commit ArsiPHP - Code Skeleton
+  - supporting JWT TOKEN, RAW SQL execute, Routing and ENV setting
+2) initialize develop branch using GIT flow
